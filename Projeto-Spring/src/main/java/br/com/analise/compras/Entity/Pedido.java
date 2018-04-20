@@ -15,7 +15,9 @@ public class Pedido implements Serializable {
     @Column(name="pe_instante")
     private Date instante;
 
+    @JoinColumn(name = "en_id")
     private Endereco enderecoDoEntrega;
+
 
     @ManyToOne
     @JoinColumn(name = "cl_id")
