@@ -1,21 +1,49 @@
 package br.com.analise.compras.Entity;
 
-public class Endereco {
+
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Objects;
+
+@Entity
+@Table(name="tb_endereco")
+@SequenceGenerator(name = "seq_endereco", sequenceName = "seq_endereco")
+public class Endereco implements Serializable {
+    @Id
+    @Column(name="en_id")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_endereco")
     private Long id;
+
+    @Column(name="en_logradouro")
     private String logradouro;
+
+    @Column(name="en_numero")
     private String numero;
+
+    @Column(name="en_complemento")
     private String complemento;
+
+    @Column(name="en_bairro")
     private String bairro;
+
+    @Column(name="en_cep")
     private String cep;
+
+    @ManyToOne
+    @JoinColumn(name="cl_id")
+    private Cliente cliente;
+
     public Endereco(){}
 
-    public Endereco(Long id, String logradouro, String numero, String complemento, String bairro, String cep) {
+    public Endereco(Long id, String logradouro, String numero, String complemento, String bairro, String cep, Cliente cliente) {
         this.id = id;
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
         this.bairro = bairro;
         this.cep = cep;
+        this.cliente=cliente;
     }
 
     public Long getId() {
@@ -66,4 +94,25 @@ public class Endereco {
         this.cep = cep;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Endereco endereco = (Endereco) o;
+        return Objects.equals(id, endereco.id);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id);
+    }
 }

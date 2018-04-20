@@ -18,27 +18,27 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "TB_PRODUTO")
+@Table(name = "tb_produto")
 @SequenceGenerator(name = "seq_produto", sequenceName = "seq_produto")
 public class Produto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_produto")
-    @Column(name = "PR_ID")
+    @Column(name = "pr_id")
     private Integer id;
 
-    @Column(name = "PR_NOME")
+    @Column(name = "pr_nome")
     private String nome;
 
-    @Column(name = "PR_PRECO")
+    @Column(name = "pr_preco")
     private Double preco;
 
     //Associações
     @JsonBackReference
     @ManyToMany
-    @JoinTable(name = "TB_PRODUTO_CATEGORIA",
-            joinColumns = @JoinColumn(name = "PR_ID"),
-            inverseJoinColumns = @JoinColumn(name = "CA_ID"))
+    @JoinTable(name = "tb_produto_categoria",
+            joinColumns = @JoinColumn(name = "pr_id"),
+            inverseJoinColumns = @JoinColumn(name = "ca_id"))
     private List<Categoria> categorias = new ArrayList<>();
 
     public Produto() {

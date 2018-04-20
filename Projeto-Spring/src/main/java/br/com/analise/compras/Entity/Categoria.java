@@ -16,16 +16,16 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "TB_CATEGORIA")
+@Table(name = "tb_categoria")
 @SequenceGenerator(name = "seq_categoria", sequenceName = "seq_categoria")
 public class Categoria implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_categoria")
-    @Column(name = "CA_ID")
+    @Column(name = "ca_id")
     private Integer id;
 
-    @Column(name = "CA_NOME")
+    @Column(name = "ca_nome")
     private String nome;
 
     //Associações
