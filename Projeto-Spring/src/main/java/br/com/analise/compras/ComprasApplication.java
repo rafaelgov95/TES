@@ -1,9 +1,7 @@
 package br.com.analise.compras;
 
-import br.com.analise.compras.Entity.Categoria;
-import br.com.analise.compras.Entity.Cidade;
-import br.com.analise.compras.Entity.Estado;
-import br.com.analise.compras.Entity.Produto;
+import br.com.analise.compras.Entity.*;
+import br.com.analise.compras.Entity.enumeration.TipoClienteEnum;
 import br.com.analise.compras.repository.CategoriaRepository;
 import br.com.analise.compras.repository.CidadeRepository;
 import br.com.analise.compras.repository.EstadoRepository;
@@ -72,5 +70,11 @@ public class ComprasApplication implements CommandLineRunner {
 
         estadoRepository.save(Arrays.asList(est1, est2));
         cidadeRepository.save(Arrays.asList(c1, c2, c3));
+
+        Cliente clil = new Cliente(null,"Maria Verde","maria.verde@verde.com","04645601173",TipoClienteEnum.PESSOAFISICA,null);
+        clil.getTelefones().addAll(Arrays.asList("6732910202","6732913114"));
+        Endereco end1 = new Endereco(null,"Rua das Flores","420","Ao lado das flores","Flores","79400000",clil,c1);
+        Endereco end2 = new Endereco(null,"Rua Oliva","410","Publisom","Juao","803012301",clil,c2);
+
     }
 }

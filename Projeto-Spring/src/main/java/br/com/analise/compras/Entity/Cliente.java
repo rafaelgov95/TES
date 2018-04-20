@@ -4,9 +4,7 @@ import br.com.analise.compras.Entity.enumeration.TipoClienteEnum;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_cliente")
@@ -31,10 +29,16 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "cliente")
     private List<Pedido> pedidos = new ArrayList<>();
 
+
+    @ElementCollection
+    @CollectionTable(name="tb_telefone",joinColumns=@JoinColumn(name="cl_id"))
+    private Set<String> telefones = new HashSet<String>();
+
     public Cliente() {
     }
 
-    public Cliente(String nome, String email, String cpfCnpj, TipoClienteEnum tipo, List<Endereco> enderecos) {
+    public Cliente(Long id,String nome, String email, String cpfCnpj, TipoClienteEnum tipo, List<Endereco> enderecos) {
+        this.id=id;
         this.nome = nome;
         this.email = email;
         this.cpfCnpj = cpfCnpj;
@@ -105,6 +109,14 @@ public class Cliente implements Serializable {
 
     public void setPedidos(List<Pedido> pedidos) {
         this.pedidos = pedidos;
+    }
+
+    public Set<String> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(Set<String> telefones) {
+        this.telefones = telefones;
     }
 
     @Override
