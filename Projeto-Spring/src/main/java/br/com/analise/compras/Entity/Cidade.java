@@ -20,7 +20,7 @@ public class Cidade implements Serializable {
     @Id
     @Column(name = "ci_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_cidade")
-    private Integer id;
+    private Long id;
 
     @Column(name = "ci_nome")
     private String nome;
@@ -33,17 +33,17 @@ public class Cidade implements Serializable {
 
     }
 
-    public Cidade(Integer id, String nome, Estado estado) {
+    public Cidade(Long id, String nome, Estado estado) {
         this.id = id;
         this.nome = nome;
         this.estado = estado;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

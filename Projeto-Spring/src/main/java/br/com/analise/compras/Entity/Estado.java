@@ -1,5 +1,7 @@
 package br.com.analise.compras.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,11 +24,11 @@ public class Estado implements Serializable {
     @Id
     @Column(name = "es_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_estado")
-    private Integer id;
+    private Long id;
 
     @Column(name = "es_nome")
     private String nome;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "estado")
     private List<Cidade> cidades = new ArrayList<>();
 
@@ -34,16 +36,16 @@ public class Estado implements Serializable {
 
     }
 
-    public Estado(Integer id, String nome) {
+    public Estado(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

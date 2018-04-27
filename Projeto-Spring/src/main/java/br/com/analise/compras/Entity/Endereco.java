@@ -2,6 +2,8 @@ package br.com.analise.compras.Entity;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
@@ -30,6 +32,7 @@ public class Endereco implements Serializable {
     @Column(name="en_cep")
     private String cep;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name="cl_id")
     private Cliente cliente;

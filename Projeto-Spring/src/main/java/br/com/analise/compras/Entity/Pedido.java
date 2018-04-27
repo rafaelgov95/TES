@@ -1,11 +1,10 @@
 package br.com.analise.compras.Entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name="tb_pedido")
@@ -15,6 +14,8 @@ public class Pedido implements Serializable {
     @Column(name="pe_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_pedido")
     private Long id;
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
     @Column(name="pe_instante")
     private Date instante;
 
@@ -30,16 +31,23 @@ public class Pedido implements Serializable {
     @OneToOne(cascade = CascadeType.ALL,mappedBy = "pedido")
     private Pagamento pagamento ;
 
+    @OneToMany(mappedBy="id.pedido")
+    private Set<ItemPedido> itens = new HashSet<>();
+
+
+    public void setItens(Set<ItemPedido> itens) {
+        this.itens = itens;
+    }
+
     public Pedido(){
 
     }
 
-    public Pedido(Long id, Date instante, Endereco enderecoDoEntrega, Cliente cliente, Pagamento pagamento) {
+    public Pedido(Long id, Date instante, Endereco enderecoDoEntrega, Cliente cliente) {
         this.id = id;
         this.instante = instante;
         this.enderecoDoEntrega = enderecoDoEntrega;
         this.cliente = cliente;
-        this.pagamento=pagamento;
     }
 
     public Long getId() {
@@ -82,6 +90,9 @@ public class Pedido implements Serializable {
         this.pagamento = pagamento;
     }
 
+    public Set<ItemPedido> getItens() {
+        return itens;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

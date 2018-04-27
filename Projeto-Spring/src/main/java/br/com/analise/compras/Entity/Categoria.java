@@ -23,13 +23,12 @@ public class Categoria implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_categoria")
     @Column(name = "ca_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "ca_nome")
     private String nome;
 
-    //Associações
-    @JsonManagedReference
+
     @ManyToMany(mappedBy = "categorias")
     private List<Produto> produtos = new ArrayList<>();
 
@@ -37,16 +36,16 @@ public class Categoria implements Serializable {
 
     }
 
-    public Categoria(Integer id, String nome) {
+    public Categoria(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

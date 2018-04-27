@@ -14,6 +14,7 @@ public class PagamentoComCartao extends Pagamento{
     private Integer numeroDeParclas;
 
     public PagamentoComCartao(Integer numeroDeParclas) {
+        super();
         this.numeroDeParclas = numeroDeParclas;
     }
 

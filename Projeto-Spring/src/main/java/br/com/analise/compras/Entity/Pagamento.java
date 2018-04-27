@@ -1,35 +1,40 @@
 package br.com.analise.compras.Entity;
 
 import br.com.analise.compras.Entity.enumeration.EstadoPagamentoEnum;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Objects;
 
 @Entity
-@Table(name="tb_pagamento")
+@Table(name = "tb_pagamento")
+@Inheritance(strategy = InheritanceType.JOINED)
 @SequenceGenerator(name = "seq_pagamento", sequenceName = "seq_pagamento")
-public class Pagamento {
+public abstract class Pagamento implements Serializable {
     @Id
-    @Column(name="pg_id")
+    @Column(name = "pg_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_pagamento")
     private Long id;
-
-    @Column(name="pg_estado")
+    @Enumerated(EnumType.STRING)
+    @Column(name = "pg_estado")
     private EstadoPagamentoEnum estado;
 
+    @JsonIgnore
     @OneToOne
-    @JoinColumn(name="pe_id")
+    @JoinColumn(name = "pe_id")
     @MapsId
     private Pedido pedido;
 
 
-    Pagamento(){
+    public Pagamento() {
 
     }
 
     public Pagamento(Long id, EstadoPagamentoEnum estado, Pedido pedido) {
         this.id = id;
         this.estado = estado;
-        this.pedido=pedido;
+        this.pedido = pedido;
     }
 
     public Long getId() {
@@ -54,5 +59,19 @@ public class Pagamento {
 
     public void setPedido(Pedido pedido) {
         this.pedido = pedido;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pagamento pagamento = (Pagamento) o;
+        return Objects.equals(id, pagamento.id);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id);
     }
 }

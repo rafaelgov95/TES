@@ -1,17 +1,16 @@
 package br.com.analise.compras;
 
 import br.com.analise.compras.Entity.*;
+import br.com.analise.compras.Entity.enumeration.EstadoPagamentoEnum;
 import br.com.analise.compras.Entity.enumeration.TipoClienteEnum;
-import br.com.analise.compras.repository.CategoriaRepository;
-import br.com.analise.compras.repository.CidadeRepository;
-import br.com.analise.compras.repository.EstadoRepository;
-import br.com.analise.compras.repository.ProdutoRepository;
+import br.com.analise.compras.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,6 +30,17 @@ public class ComprasApplication implements CommandLineRunner {
     @Autowired
     private EstadoRepository estadoRepository;
 
+    @Autowired
+    private ClienteRepository clienteRepository;
+
+    @Autowired
+    private EnderecoRepository enderecoRepository;
+
+    @Autowired
+    private PedidoRepository pedidoRepository;
+
+    @Autowired
+    private ItemPedidoRepository itemPedidoRepository;
     public static void main(String[] args) {
         SpringApplication.run(ComprasApplication.class, args);
     }
@@ -75,6 +85,41 @@ public class ComprasApplication implements CommandLineRunner {
         clil.getTelefones().addAll(Arrays.asList("6732910202","6732913114"));
         Endereco end1 = new Endereco(null,"Rua das Flores","420","Ao lado das flores","Flores","79400000",clil,c1);
         Endereco end2 = new Endereco(null,"Rua Oliva","410","Publisom","Juao","803012301",clil,c2);
+
+        clienteRepository.save(clil);
+        enderecoRepository.save(Arrays.asList(end1,end2));
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy hh:mm");
+
+        Pedido pe1 = new Pedido(null,sdf.parse("30/08/2017 10:32"),end1,clil);
+        Pedido pe2 = new Pedido(null,sdf.parse("30/08/2017 10:32"),end1,clil);
+        Pedido pe3 = new Pedido(null,sdf.parse("30/08/2017 10:32"),end1,clil);
+
+        PagamentoBoleto pg1 = new PagamentoBoleto(null,EstadoPagamentoEnum.QUITADO,pe1,sdf.parse("30/08/2017 10:32"));
+        PagamentoComCartao pg2 = new PagamentoComCartao(null,EstadoPagamentoEnum.CANCELADO,pe2,3);
+        PagamentoComCartao pg3 = new PagamentoComCartao(null,EstadoPagamentoEnum.PENDENTE,pe3,4);
+
+        clil.getPedidos().addAll(Arrays.asList(pe1,pe2,pe3));
+
+        pedidoRepository.save(pe1);
+        pedidoRepository.save(pe2);
+        pedidoRepository.save(pe3);
+        clienteRepository.save(clil);
+
+        ItemPedido item1 = new  ItemPedido(p1,pe1,12.0,10,30.0);
+
+        ItemPedido item2 = new   ItemPedido(p1,pe1,11.0,10,30.0);
+
+        ItemPedido item3 = new   ItemPedido(p1,pe1,13.0,10,30.0);
+
+        pe1.getItens().addAll(Arrays.asList(item1,item2));
+        pe2.getItens().addAll(Arrays.asList(item3));
+
+        p1.getItens().addAll(Arrays.asList(item1));
+        p1.getItens().addAll(Arrays.asList(item2));
+        p1.getItens().addAll(Arrays.asList(item3));
+
+        itemPedidoRepository.save(Arrays.asList(item1,item2,item3));
 
     }
 }
