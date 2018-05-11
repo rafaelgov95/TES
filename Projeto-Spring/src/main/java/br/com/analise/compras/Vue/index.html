@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste de class binding</title>
+    <!--npm install -g http-server-->
+    <!--https://github.com/vuejs/vue-devtools-->
+    <style>
+        .color-red {
+            color: red;
+        }
+
+        .color-blue{
+            color: blue;
+        }
+
+        .is-loading{
+            background: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="root">
+    <button title="Título do botão">Passe o mouse sobre o botão</button>
+    <button title="titulo">Passe o mouse sobre o botão</button>
+    <button v-bind:title="titulo">Passe o mouse sobre o botão</button>
+    <button :title="titulo">Passe o mouse sobre o botão</button>
+
+    <h1 :class="className">Olá class binding</h1>
+
+    <h1 :class="{'is-loading': isloading}" @click="toggleClass">Olá class binding {'is-loading': true}</h1>
+</div>
+
+<script src="http://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#root',
+        data: {
+            titulo: 'Agora o título Modificado pelo JavaScript',
+            className: 'color-blue',
+            isloading: false
+        },
+        methods:{
+            toggleClass(){
+                this.isloading = !this.isloading
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

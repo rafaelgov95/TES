@@ -25,4 +25,24 @@ public class PedidoResource {
         Pedido pedido = pedidoService.buscarPedidoPorId(id);
         return ResponseEntity.ok().body(pedido);
     }
+    @RequestMapping(method = RequestMethod.GET, path = "")
+    public ResponseEntity<?>  getAll(@PathVariable("id") Long id) {
+        Pedido pedido = pedidoService.buscarPedidoPorId(id);
+        return ResponseEntity.ok().body(pedido);
+    }
+
+
+    @RequestMapping(method = RequestMethod.POST, path = "")
+    public ResponseEntity<?> delete(@PathVariable("id") Long id) {
+        Pedido pedido = pedidoService.buscarPedidoPorId(id);
+        return ResponseEntity.ok().body(pedido);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, path = "")
+    public ResponseEntity<?> update(@PathVariable("id") Long id) {
+        Pedido pedido = pedidoService.buscarPedidoPorId(id);
+        return ResponseEntity.ok().body(pedido);
+    }
+
+
 }
