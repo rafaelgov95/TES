@@ -1,26 +1,28 @@
 package br.com.analise.compras.service;
 
 import br.com.analise.compras.Entity.Categoria;
+import br.com.analise.compras.Entity.Pedido;
 import br.com.analise.compras.exception.ObjectNotFountException;
 import br.com.analise.compras.repository.CategoriaRepository;
+import br.com.analise.compras.repository.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CategoriaService {
+public class PedidoService {
 
     @Autowired
-    private CategoriaRepository categoriaRepository;
+    private PedidoRepository pedidoRepository;
 
-    public Categoria buscarCategoriaPorId(Long id) {
+    public Pedido buscarPedidoPorId(Long id) {
 
-        Categoria categoria = categoriaRepository.findOne(id);
+        Pedido pedido = pedidoRepository.findOne(id);
 
-        if(categoria == null){
+        if(pedido == null){
             throw new ObjectNotFountException("O objeto " + Categoria.class.getName() +
             " com ID: " + id + " não foi encontrado!");
         }
 
-        return categoria;
+        return pedido;
     }
 }

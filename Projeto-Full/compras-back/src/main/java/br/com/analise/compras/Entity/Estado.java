@@ -1,13 +1,14 @@
 package br.com.analise.compras.Entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.io.Serializable;
@@ -16,27 +17,26 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_categoria")
-@SequenceGenerator(name = "seq_categoria", sequenceName = "seq_categoria")
-public class Categoria implements Serializable {
+@Table(name = "tb_estado")
+@SequenceGenerator(name = "seq_estado", sequenceName = "seq_estado")
+public class Estado implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_categoria")
-    @Column(name = "ca_id")
+    @Column(name = "es_id")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_estado")
     private Long id;
 
-    @Column(name = "ca_nome")
+    @Column(name = "es_nome")
     private String nome;
+    @JsonIgnore
+    @OneToMany(mappedBy = "estado")
+    private List<Cidade> cidades = new ArrayList<>();
 
-
-    @ManyToMany(mappedBy = "categorias")
-    private List<Produto> produtos = new ArrayList<>();
-
-    public Categoria() {
+    public Estado(){
 
     }
 
-    public Categoria(Long id, String nome) {
+    public Estado(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
@@ -57,20 +57,20 @@ public class Categoria implements Serializable {
         this.nome = nome;
     }
 
-    public List<Produto> getProdutos() {
-        return produtos;
+    public List<Cidade> getCidades() {
+        return cidades;
     }
 
-    public void setProdutos(List<Produto> produtos) {
-        this.produtos = produtos;
+    public void setCidades(List<Cidade> cidades) {
+        this.cidades = cidades;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Categoria categoria = (Categoria) o;
-        return Objects.equals(id, categoria.id);
+        Estado estado = (Estado) o;
+        return Objects.equals(id, estado.id);
     }
 
     @Override

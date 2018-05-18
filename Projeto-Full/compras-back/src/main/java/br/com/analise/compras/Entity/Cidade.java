@@ -1,44 +1,42 @@
 package br.com.analise.compras.Entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_categoria")
-@SequenceGenerator(name = "seq_categoria", sequenceName = "seq_categoria")
-public class Categoria implements Serializable {
+@Table(name = "tb_cidade")
+@SequenceGenerator(name = "seq_cidade", sequenceName = "seq_cidade")
+public class Cidade implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_categoria")
-    @Column(name = "ca_id")
+    @Column(name = "ci_id")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_cidade")
     private Long id;
 
-    @Column(name = "ca_nome")
+    @Column(name = "ci_nome")
     private String nome;
 
+    @ManyToOne
+    @JoinColumn(name = "es_id")
+    private Estado estado;
 
-    @ManyToMany(mappedBy = "categorias")
-    private List<Produto> produtos = new ArrayList<>();
-
-    public Categoria() {
+    public Cidade() {
 
     }
 
-    public Categoria(Long id, String nome) {
+    public Cidade(Long id, String nome, Estado estado) {
         this.id = id;
         this.nome = nome;
+        this.estado = estado;
     }
 
     public Long getId() {
@@ -57,20 +55,20 @@ public class Categoria implements Serializable {
         this.nome = nome;
     }
 
-    public List<Produto> getProdutos() {
-        return produtos;
+    public Estado getEstado() {
+        return estado;
     }
 
-    public void setProdutos(List<Produto> produtos) {
-        this.produtos = produtos;
+    public void setEstado(Estado estado) {
+        this.estado = estado;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Categoria categoria = (Categoria) o;
-        return Objects.equals(id, categoria.id);
+        Cidade cidade = (Cidade) o;
+        return Objects.equals(id, cidade.id);
     }
 
     @Override
