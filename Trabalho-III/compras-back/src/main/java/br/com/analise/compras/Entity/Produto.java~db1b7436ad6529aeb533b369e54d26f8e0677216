@@ -23,11 +23,8 @@ public class Produto implements Serializable {
     @Column(name = "pr_preco")
     private Double preco;
 
-    @Column(name = "pr_quantidade")
-    private Integer quantidade;
-
     @JsonIgnore
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     @JoinTable(name = "tb_produto_categoria",
             joinColumns = @JoinColumn(name = "pr_id"),
             inverseJoinColumns = @JoinColumn(name = "ca_id"))
@@ -84,14 +81,6 @@ public class Produto implements Serializable {
 
     public Set<ItemPedido> getItens() {
         return itens;
-    }
-
-    public Integer getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
     }
 
     @JsonIgnore

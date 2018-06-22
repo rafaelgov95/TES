@@ -2,14 +2,7 @@ package br.com.analise.compras.Entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +22,7 @@ public class Categoria implements Serializable {
     private String nome;
 
 
-    @ManyToMany(mappedBy = "categorias")
+    @ManyToMany(mappedBy = "categorias",fetch = FetchType.LAZY)
     private List<Produto> produtos = new ArrayList<>();
 
     public Categoria() {

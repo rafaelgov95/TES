@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -22,12 +23,9 @@ public class CategoriaService {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public Categoria salvar(Categoria cat1) {
-        Categoria catsalva = categoriaRepository.save(cat1);
-        List<Produto> produtos = cat1.getProdutos();
-        produtos.forEach(produto -> produto.getCategorias().add(catsalva));
-        produtoRepository.save(cat1.getProdutos());
-        return catsalva;
+        return categoriaRepository.save(cat1);
     }
+    @Transactional
     public Categoria buscarCategoriaPorId(Long id) {
 
         Categoria categoria = categoriaRepository.findOne(id);
@@ -48,8 +46,11 @@ public class CategoriaService {
         }
         return categorias;
     }
-    public void delete(Long id) {
-
+    public List<Categoria> delete(Long id) {
+        Categoria cat = categoriaRepository.getOne(id);
+        cat.getProdutos().forEach(produto ->  produtoRepository.delete(produto.getId()));
         categoriaRepository.delete(id);
+
+        return categoriaRepository.findAll();
     }
 }

@@ -47,7 +47,7 @@ public class ComprasApplication implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        Categoria cat1 = new Categoria(null, "Informática");
+        Categoria cat1 = new Categoria(null, "informática");
         Categoria cat2 = new Categoria(null, "Escritório");
 
         Produto p1 = new Produto(null, "Computador", 2000.00);
@@ -119,7 +119,7 @@ public class ComprasApplication implements CommandLineRunner {
         p1.getItens().addAll(Arrays.asList(item2));
         p1.getItens().addAll(Arrays.asList(item3));
 
-//        itemPedidoRepository.save(Arrays.asList(item1,item2,item3));
+        itemPedidoRepository.save(Arrays.asList(item1,item2,item3));
 
     }
 }
