@@ -28,13 +28,30 @@ public class ProdutoResource {
     @Autowired
     private CategoriaService categoriaService;
 
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.PUT)
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<?> buscarCategoria(@RequestParam Long id , @RequestBody Produto produto) {
+    public ResponseEntity<?> update(@RequestParam Long id , @RequestBody Produto produto) {
         Categoria cat = categoriaService.buscarCategoriaPorId(id);
         produto.getCategorias().add(cat);
         return ResponseEntity.ok().body( produtoService.salvar(produto));
     }
+//    @RequestMapping(method = RequestMethod.PUT)
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public ResponseEntity<?> update(@RequestBody Produto produto) {
+//        return ResponseEntity.ok().body( produtoService.salvar(produto));
+//    }
 
+    @RequestMapping(method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<?> savar(@RequestParam Long id , @RequestBody Produto produto) {
+        Categoria cat = categoriaService.buscarCategoriaPorId(id);
+        produto.getCategorias().add(cat);
+        return ResponseEntity.ok().body( produtoService.salvar(produto));
+    }
+    @RequestMapping(method = RequestMethod.DELETE, path = "/{id}")
+    public ResponseEntity<?> deletar(@PathVariable("id") Long id) {
+        produtoService.delete(id);
+        return ResponseEntity.ok(200);
+    }
 
 }

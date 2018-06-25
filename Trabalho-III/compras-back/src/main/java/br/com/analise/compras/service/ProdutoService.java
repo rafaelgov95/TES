@@ -36,6 +36,9 @@ public class ProdutoService {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     public Produto salvar(Produto produto) {
-        return  produtoRepository.save(produto);
+         return  produtoRepository.save(produto);
+    }
+    public void delete(Long id) {
+        produtoRepository.delete(id);
     }
 }

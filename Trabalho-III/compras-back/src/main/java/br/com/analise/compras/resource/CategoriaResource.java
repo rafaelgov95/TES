@@ -35,6 +35,12 @@ public class CategoriaResource {
         return ResponseEntity.ok().body(categoriaService.getCategorias());
     }
 
+    @RequestMapping(method = RequestMethod.PUT,  path = "/")
+    public ResponseEntity<?> update(@RequestBody Categoria categoria) {
+        Categoria cat = categoriaService.salvar(categoria);
+        return ResponseEntity.ok().body(cat);
+    }
+
     @RequestMapping(method = RequestMethod.DELETE, path = "/{id}")
     public ResponseEntity<?> deletar(@PathVariable("id") Long id) {
         return ResponseEntity.ok().body(categoriaService.delete(id));
