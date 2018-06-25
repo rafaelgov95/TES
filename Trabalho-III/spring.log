@@ -10308,3 +10308,1000 @@ Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
 2018-06-25 09:14:44.146  INFO 11593 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
 2018-06-25 09:14:44.355  INFO 11593 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2018-06-25 09:19:04.800  WARN 11593 --- [http-nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "null"
+2018-06-25 12:08:06.421  INFO 30184 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 30184 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 12:08:06.430  INFO 30184 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 12:08:06.618  INFO 30184 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 12:08:06 AMT 2018]; root of context hierarchy
+2018-06-25 12:08:07.978  INFO 30184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7e52d745] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 12:08:08.262  INFO 30184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 12:08:08.269  INFO 30184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 12:08:08.270  INFO 30184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 12:08:08.331  INFO 30184 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 12:08:08.331  INFO 30184 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1729 ms
+2018-06-25 12:08:08.432  INFO 30184 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 12:08:08.435  INFO 30184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 12:08:08.435  INFO 30184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 12:08:08.435  INFO 30184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 12:08:08.435  INFO 30184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 12:08:08.822  INFO 30184 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 12:08:08.830  INFO 30184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 12:08:08.919  INFO 30184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 12:08:08.920  INFO 30184 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 12:08:08.921  INFO 30184 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 12:08:08.949  INFO 30184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 12:08:09.017  INFO 30184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 12:08:09.147  INFO 30184 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 12:08:09.148  INFO 30184 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@71904469
+2018-06-25 12:08:09.323  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.326  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.326  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.327  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.328  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.328  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.329  WARN 30184 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 12:08:09.437  WARN 30184 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 12:08:09.438  WARN 30184 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 12:08:09.809  INFO 30184 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 12:08:09.983  INFO 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 12:08:09.988 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 12:08:09.989 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 12:08:09.989 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 12:08:09.989 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 12:08:09.990 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 12:08:09.990 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 12:08:09.991 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 12:08:09.991 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 12:08:09.992 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 12:08:09.992 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 12:08:09.993 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 12:08:09.993 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 12:08:09.993 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 12:08:09.994 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 12:08:09.994 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 12:08:09.994 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 12:08:09.995 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 12:08:09.996 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 12:08:09.996 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 12:08:09.996 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 12:08:09.997 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 12:08:09.997 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 12:08:09.998 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 12:08:09.998 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 12:08:10.011 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 12:08:10.012 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 12:08:10.012 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 12:08:10.013 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 12:08:10.014 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 12:08:10.014 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 12:08:10.014 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 12:08:10.015 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 12:08:10.015 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 12:08:10.015 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 12:08:10.016 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 12:08:10.016 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 12:08:10.017 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 12:08:10.017 ERROR 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 12:08:10.234  INFO 30184 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 12:08:10.287  INFO 30184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 12:08:10.957  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 12:08:06 AMT 2018]; root of context hierarchy
+2018-06-25 12:08:11.017  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 12:08:11.019  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 12:08:11.020  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 12:08:11.021  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 12:08:11.022  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 12:08:11.024  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 12:08:11.024  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 12:08:11.025  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 12:08:11.027  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 12:08:11.028  INFO 30184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 12:08:11.056  INFO 30184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 12:08:11.056  INFO 30184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 12:08:11.077  INFO 30184 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 12:08:11.107  INFO 30184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 12:08:11.507  INFO 30184 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 12:08:11.540  INFO 30184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 12:08:11.935  INFO 30184 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 6.421 seconds (JVM running for 8.098)
+2018-06-25 12:08:23.816  INFO 30184 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 12:08:23.818  INFO 30184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 12:08:23.835  INFO 30184 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-25 12:08:23.960  INFO 30184 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 12:11:31.087  WARN 30184 --- [http-nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2018-06-25 12:12:22.419  WARN 30184 --- [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2018-06-25 12:12:23.963  WARN 30184 --- [http-nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to bind request element: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2018-06-25 12:20:29.566  INFO 30184 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 12:08:06 AMT 2018]; root of context hierarchy
+2018-06-25 12:20:29.614  INFO 30184 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 12:20:29.619  INFO 30184 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 12:20:29.620  INFO 30184 --- [Thread-15] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 12:20:29.816  INFO 30184 --- [Thread-15] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 13:10:02.783  INFO 3806 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 3806 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 13:10:02.786  INFO 3806 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 13:10:02.904  INFO 3806 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 13:10:02 AMT 2018]; root of context hierarchy
+2018-06-25 13:10:05.741  INFO 3806 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$debff372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 13:10:06.688  INFO 3806 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 13:10:06.698  INFO 3806 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 13:10:06.700  INFO 3806 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 13:10:06.811  INFO 3806 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 13:10:06.812  INFO 3806 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3927 ms
+2018-06-25 13:10:07.059  INFO 3806 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 13:10:07.066  INFO 3806 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 13:10:07.067  INFO 3806 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 13:10:07.067  INFO 3806 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 13:10:07.067  INFO 3806 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 13:10:08.494  INFO 3806 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 13:10:08.510  INFO 3806 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 13:10:08.599  INFO 3806 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 13:10:08.601  INFO 3806 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 13:10:08.602  INFO 3806 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 13:10:08.642  INFO 3806 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 13:10:08.773  INFO 3806 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 13:10:09.010  INFO 3806 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 13:10:09.012  INFO 3806 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5e65afb6
+2018-06-25 13:10:09.194  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.196  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.197  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.197  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.197  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.198  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.198  WARN 3806 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 13:10:09.265  WARN 3806 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 13:10:09.265  WARN 3806 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 13:10:09.612  INFO 3806 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 13:10:09.733  INFO 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 13:10:09.739 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 13:10:09.740 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 13:10:09.740 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 13:10:09.740 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 13:10:09.741 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 13:10:09.741 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 13:10:09.742 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 13:10:09.742 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 13:10:09.743 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 13:10:09.743 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 13:10:09.744 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 13:10:09.744 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 13:10:09.745 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 13:10:09.745 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 13:10:09.746 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 13:10:09.746 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 13:10:09.747 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 13:10:09.747 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 13:10:09.750 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 13:10:09.750 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 13:10:09.750 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 13:10:09.751 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 13:10:09.751 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 13:10:09.751 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 13:10:09.758 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 13:10:09.758 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 13:10:09.759 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 13:10:09.759 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 13:10:09.760 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 13:10:09.760 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 13:10:09.761 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 13:10:09.761 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 13:10:09.762 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 13:10:09.762 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 13:10:09.763 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 13:10:09.763 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 13:10:09.763 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 13:10:09.764 ERROR 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 13:10:09.900  INFO 3806 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 13:10:09.950  INFO 3806 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 13:10:10.681  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 13:10:02 AMT 2018]; root of context hierarchy
+2018-06-25 13:10:10.751  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 13:10:10.753  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 13:10:10.755  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 13:10:10.755  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 13:10:10.756  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 13:10:10.757  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 13:10:10.758  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 13:10:10.758  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 13:10:10.761  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 13:10:10.761  INFO 3806 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 13:10:10.792  INFO 3806 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 13:10:10.792  INFO 3806 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 13:10:10.808  INFO 3806 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 13:10:10.830  INFO 3806 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 13:10:11.171  INFO 3806 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 13:10:11.229  INFO 3806 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 13:10:11.514  INFO 3806 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 9.256 seconds (JVM running for 10.861)
+2018-06-25 13:16:11.960  INFO 3806 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 13:16:11.961  INFO 3806 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 13:16:11.977  INFO 3806 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-06-25 13:16:12.078  INFO 3806 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 13:53:50.005 ERROR 3806 --- [http-nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.EntityNotFoundException: Unable to find br.com.analise.compras.Entity.Categoria with id 9] with root cause
+
+javax.persistence.EntityNotFoundException: Unable to find br.com.analise.compras.Entity.Categoria with id 9
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:144) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:242) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:159) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:266) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:73) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at br.com.analise.compras.Entity.Categoria_$$_jvst233_1.getProdutos(Categoria_$$_jvst233_1.java) ~[classes/:na]
+	at br.com.analise.compras.service.CategoriaService.delete(CategoriaService.java:51) ~[classes/:na]
+	at br.com.analise.compras.service.CategoriaService$$FastClassBySpringCGLIB$$1a92f82a.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at br.com.analise.compras.service.CategoriaService$$EnhancerBySpringCGLIB$$2edb0b17.delete(<generated>) ~[classes/:na]
+	at br.com.analise.compras.resource.CategoriaResource.deletar(CategoriaResource.java:46) ~[classes/:na]
+	at br.com.analise.compras.resource.CategoriaResource$$FastClassBySpringCGLIB$$533f8c90.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669) ~[spring-aop-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at br.com.analise.compras.resource.CategoriaResource$$EnhancerBySpringCGLIB$$5f55b809.deletar(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:894) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:667) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_162]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.27.jar:8.5.27]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_162]
+
+2018-06-25 14:20:35.670  INFO 3806 --- [Thread-21] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 13:10:02 AMT 2018]; root of context hierarchy
+2018-06-25 14:20:35.673  INFO 3806 --- [Thread-21] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:20:35.676  INFO 3806 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:20:35.676  INFO 3806 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:20:35.742  INFO 3806 --- [Thread-21] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:20:42.949  INFO 9476 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 9476 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:20:42.962  INFO 9476 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:20:43.124  INFO 9476 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:20:43 AMT 2018]; root of context hierarchy
+2018-06-25 14:20:44.389  INFO 9476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1c871e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:20:44.756  INFO 9476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:20:44.764  INFO 9476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:20:44.765  INFO 9476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:20:44.830  INFO 9476 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:20:44.830  INFO 9476 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1715 ms
+2018-06-25 14:20:44.939  INFO 9476 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:20:44.942  INFO 9476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:20:44.943  INFO 9476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:20:44.943  INFO 9476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:20:44.943  INFO 9476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:20:45.384  INFO 9476 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:20:45.395  INFO 9476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:20:45.447  INFO 9476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:20:45.448  INFO 9476 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:20:45.449  INFO 9476 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:20:45.480  INFO 9476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:20:45.574  INFO 9476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:20:45.737  INFO 9476 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:20:45.739  INFO 9476 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@412ebe64
+2018-06-25 14:20:45.927  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.928  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.928  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.929  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.929  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.929  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.929  WARN 9476 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:20:45.966  WARN 9476 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:20:45.966  WARN 9476 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:20:46.335  INFO 9476 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:20:46.457  INFO 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:20:46.463 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:20:46.463 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:20:46.463 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:20:46.464 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:20:46.464 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:20:46.464 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:20:46.465 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:20:46.465 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:20:46.465 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:20:46.466 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:20:46.466 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:20:46.466 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:20:46.466 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:20:46.467 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:20:46.467 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:20:46.467 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:20:46.467 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:20:46.468 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:20:46.468 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:20:46.468 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:20:46.469 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:20:46.469 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:20:46.469 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:20:46.470 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:20:46.475 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:20:46.476 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:20:46.477 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:20:46.477 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:20:46.477 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:20:46.477 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:20:46.478 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:20:46.478 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:20:46.478 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:20:46.478 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:20:46.479 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:20:46.479 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:20:46.479 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:20:46.480 ERROR 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:20:46.626  INFO 9476 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:20:46.674  INFO 9476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:20:47.352  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:20:43 AMT 2018]; root of context hierarchy
+2018-06-25 14:20:47.440  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:20:47.442  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:20:47.443  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:20:47.443  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:20:47.444  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:20:47.445  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:20:47.445  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:20:47.446  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:20:47.447  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:20:47.448  INFO 9476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:20:47.491  INFO 9476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:20:47.491  INFO 9476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:20:47.512  INFO 9476 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:20:47.550  INFO 9476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:20:47.947  INFO 9476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:20:47.985  INFO 9476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:20:48.144  INFO 9476 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 6.139 seconds (JVM running for 8.694)
+2018-06-25 14:21:20.632  INFO 9476 --- [Thread-17] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:20:43 AMT 2018]; root of context hierarchy
+2018-06-25 14:21:20.642  INFO 9476 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:21:20.648  INFO 9476 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:21:20.648  INFO 9476 --- [Thread-17] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:21:20.715  INFO 9476 --- [Thread-17] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:21:24.488  INFO 9615 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 9615 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:21:24.495  INFO 9615 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:21:24.609  INFO 9615 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30b6ffe0: startup date [Mon Jun 25 14:21:24 AMT 2018]; root of context hierarchy
+2018-06-25 14:21:26.077  INFO 9615 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a203968e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:21:26.421  INFO 9615 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:21:26.430  INFO 9615 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:21:26.433  INFO 9615 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:21:26.502  INFO 9615 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:21:26.502  INFO 9615 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1908 ms
+2018-06-25 14:21:26.609  INFO 9615 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:21:26.612  INFO 9615 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:21:26.612  INFO 9615 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:21:26.612  INFO 9615 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:21:26.613  INFO 9615 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:21:26.993  INFO 9615 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:21:27.003  INFO 9615 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:21:27.055  INFO 9615 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:21:27.056  INFO 9615 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:21:27.057  INFO 9615 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:21:27.090  INFO 9615 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:21:27.189  INFO 9615 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:21:27.325  INFO 9615 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:21:27.327  INFO 9615 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@37c5284a
+2018-06-25 14:21:27.670  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.672  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.673  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.674  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.674  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.674  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.674  WARN 9615 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:21:27.729  WARN 9615 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:21:27.730  WARN 9615 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:21:28.143  INFO 9615 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:21:28.353  INFO 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:21:28.366 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:21:28.366 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:21:28.367 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:21:28.368 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:21:28.369 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:21:28.369 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:21:28.370 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:21:28.371 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:21:28.372 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:21:28.372 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:21:28.373 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:21:28.373 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:21:28.374 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:21:28.374 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:21:28.375 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:21:28.375 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:21:28.376 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:21:28.376 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:21:28.377 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:21:28.377 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:21:28.378 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:21:28.379 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:21:28.380 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:21:28.380 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:21:28.386 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:21:28.387 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:21:28.388 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:21:28.388 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:21:28.390 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:21:28.390 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:21:28.391 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:21:28.392 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:21:28.393 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:21:28.393 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:21:28.395 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:21:28.395 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:21:28.396 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:21:28.396 ERROR 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:21:28.513  INFO 9615 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:21:28.552  INFO 9615 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:21:29.170  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30b6ffe0: startup date [Mon Jun 25 14:21:24 AMT 2018]; root of context hierarchy
+2018-06-25 14:21:29.261  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:21:29.263  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:21:29.263  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:21:29.264  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:21:29.264  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:21:29.266  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:21:29.266  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:21:29.267  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(br.com.analise.compras.Entity.Produto)
+2018-06-25 14:21:29.268  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:21:29.269  INFO 9615 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:21:29.310  INFO 9615 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:21:29.310  INFO 9615 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:21:29.325  INFO 9615 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:21:29.347  INFO 9615 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:21:29.743  INFO 9615 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:21:29.812  INFO 9615 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:21:29.994  INFO 9615 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 5.995 seconds (JVM running for 7.091)
+2018-06-25 14:21:46.097  INFO 9615 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:21:46.098  INFO 9615 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:21:46.129  INFO 9615 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-06-25 14:21:46.307  INFO 9615 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 14:40:57.690  INFO 9615 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30b6ffe0: startup date [Mon Jun 25 14:21:24 AMT 2018]; root of context hierarchy
+2018-06-25 14:40:57.705  INFO 9615 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:40:57.708  INFO 9615 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:40:57.708  INFO 9615 --- [Thread-16] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:40:57.767  INFO 9615 --- [Thread-16] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:41:01.237  INFO 11140 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 11140 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:41:01.246  INFO 11140 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:41:01.436  INFO 11140 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@93081b6: startup date [Mon Jun 25 14:41:01 AMT 2018]; root of context hierarchy
+2018-06-25 14:41:03.223  INFO 11140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6668c35d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:41:03.571  INFO 11140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:41:03.579  INFO 11140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:41:03.579  INFO 11140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:41:03.642  INFO 11140 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:41:03.642  INFO 11140 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2210 ms
+2018-06-25 14:41:03.740  INFO 11140 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:41:03.743  INFO 11140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:41:03.744  INFO 11140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:41:03.744  INFO 11140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:41:03.744  INFO 11140 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:41:04.148  INFO 11140 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:41:04.157  INFO 11140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:41:04.208  INFO 11140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:41:04.209  INFO 11140 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:41:04.210  INFO 11140 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:41:04.240  INFO 11140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:41:04.325  INFO 11140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:41:04.472  INFO 11140 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:41:04.473  INFO 11140 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7aaad0
+2018-06-25 14:41:04.668  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.670  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.670  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.671  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.671  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.671  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.671  WARN 11140 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:41:04.714  WARN 11140 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:41:04.714  WARN 11140 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:41:05.006  INFO 11140 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:41:05.115  INFO 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:41:05.121 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:41:05.122 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:41:05.122 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:41:05.123 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:41:05.123 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:41:05.123 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:41:05.124 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:41:05.124 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:41:05.124 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:41:05.124 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:41:05.125 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:41:05.125 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:41:05.126 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:41:05.126 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:41:05.126 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:41:05.127 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:41:05.127 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:41:05.127 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:41:05.128 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:41:05.128 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:41:05.129 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:41:05.129 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:41:05.130 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:41:05.130 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:41:05.135 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:41:05.135 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:41:05.136 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:41:05.136 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:41:05.136 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:41:05.136 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:41:05.137 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:41:05.137 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:41:05.137 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:41:05.137 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:41:05.138 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:41:05.138 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:41:05.139 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:41:05.139 ERROR 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:41:05.300  INFO 11140 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:41:05.344  INFO 11140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:41:05.965  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@93081b6: startup date [Mon Jun 25 14:41:01 AMT 2018]; root of context hierarchy
+2018-06-25 14:41:06.032  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:41:06.034  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:41:06.035  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:41:06.035  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:41:06.036  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:41:06.055  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:41:06.055  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:41:06.056  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(br.com.analise.compras.Entity.Produto)
+2018-06-25 14:41:06.058  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:41:06.058  INFO 11140 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:41:06.089  INFO 11140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:41:06.089  INFO 11140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:41:06.103  INFO 11140 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:41:06.123  INFO 11140 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:41:06.479  INFO 11140 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:41:06.516  INFO 11140 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:41:06.683  INFO 11140 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 5.875 seconds (JVM running for 6.935)
+2018-06-25 14:41:45.047  INFO 11140 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:41:45.047  INFO 11140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:41:45.083  INFO 11140 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-06-25 14:41:53.309  INFO 11140 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 14:45:48.103  INFO 11140 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@93081b6: startup date [Mon Jun 25 14:41:01 AMT 2018]; root of context hierarchy
+2018-06-25 14:45:48.109  INFO 11140 --- [Thread-15] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:45:48.113  INFO 11140 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:45:48.114  INFO 11140 --- [Thread-15] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:45:48.173  INFO 11140 --- [Thread-15] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:45:52.642  INFO 11627 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 11627 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:45:52.666  INFO 11627 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:45:52.965  INFO 11627 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:45:52 AMT 2018]; root of context hierarchy
+2018-06-25 14:45:55.346  INFO 11627 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fba57a75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:45:56.076  INFO 11627 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:45:56.085  INFO 11627 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:45:56.086  INFO 11627 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:45:56.190  INFO 11627 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:45:56.191  INFO 11627 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3245 ms
+2018-06-25 14:45:56.431  INFO 11627 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:45:56.434  INFO 11627 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:45:56.435  INFO 11627 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:45:56.435  INFO 11627 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:45:56.436  INFO 11627 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:45:56.854  INFO 11627 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:45:56.864  INFO 11627 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:45:56.935  INFO 11627 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:45:56.937  INFO 11627 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:45:56.937  INFO 11627 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:45:56.977  INFO 11627 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:45:57.079  INFO 11627 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:45:57.213  INFO 11627 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:45:57.215  INFO 11627 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6d293993
+2018-06-25 14:45:57.386  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.388  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.388  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.388  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.388  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.389  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.389  WARN 11627 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:45:57.428  WARN 11627 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:45:57.428  WARN 11627 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:45:57.818  INFO 11627 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:45:58.118  INFO 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:45:58.132 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:45:58.132 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:45:58.133 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:45:58.133 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:45:58.134 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:45:58.134 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:45:58.135 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:45:58.136 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:45:58.136 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:45:58.137 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:45:58.137 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:45:58.138 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:45:58.139 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:45:58.139 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:45:58.140 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:45:58.141 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:45:58.142 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:45:58.143 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:45:58.144 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:45:58.144 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:45:58.145 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:45:58.145 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:45:58.146 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:45:58.146 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:45:58.151 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:45:58.151 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:45:58.151 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:45:58.152 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:45:58.156 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:45:58.157 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:45:58.159 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:45:58.162 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:45:58.164 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:45:58.164 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:45:58.165 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:45:58.165 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:45:58.166 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:45:58.169 ERROR 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:45:58.339  INFO 11627 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:45:58.401  INFO 11627 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:45:59.234  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:45:52 AMT 2018]; root of context hierarchy
+2018-06-25 14:45:59.322  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:45:59.327  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:45:59.328  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:45:59.329  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:45:59.329  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:45:59.330  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:45:59.331  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:45:59.331  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:45:59.333  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:45:59.334  INFO 11627 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:45:59.368  INFO 11627 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:45:59.368  INFO 11627 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:45:59.383  INFO 11627 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:45:59.406  INFO 11627 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:45:59.808  INFO 11627 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:45:59.850  INFO 11627 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:46:00.070  INFO 11627 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 7.979 seconds (JVM running for 9.319)
+2018-06-25 14:46:14.760  INFO 11627 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:46:14.760  INFO 11627 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:46:14.792  INFO 11627 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-06-25 14:46:14.976  INFO 11627 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 14:49:34.620  INFO 11627 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14f232c4: startup date [Mon Jun 25 14:45:52 AMT 2018]; root of context hierarchy
+2018-06-25 14:49:34.624  INFO 11627 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:49:34.628  INFO 11627 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:49:34.629  INFO 11627 --- [Thread-20] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:49:34.696  INFO 11627 --- [Thread-20] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:49:38.059  INFO 12064 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 12064 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:49:38.065  INFO 12064 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:49:38.181  INFO 12064 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c069df: startup date [Mon Jun 25 14:49:38 AMT 2018]; root of context hierarchy
+2018-06-25 14:49:39.474  INFO 12064 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c4c7717] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:49:39.790  INFO 12064 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:49:39.799  INFO 12064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:49:39.799  INFO 12064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:49:39.853  INFO 12064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:49:39.854  INFO 12064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1678 ms
+2018-06-25 14:49:39.948  INFO 12064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:49:39.953  INFO 12064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:49:39.954  INFO 12064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:49:39.954  INFO 12064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:49:39.954  INFO 12064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:49:40.332  INFO 12064 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:49:40.341  INFO 12064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:49:40.390  INFO 12064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:49:40.392  INFO 12064 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:49:40.393  INFO 12064 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:49:40.422  INFO 12064 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:49:40.513  INFO 12064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:49:40.636  INFO 12064 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:49:40.638  INFO 12064 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@38fb50f8
+2018-06-25 14:49:40.804  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.805  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.806  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.806  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.806  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.806  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.807  WARN 12064 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:49:40.840  WARN 12064 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:49:40.840  WARN 12064 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:49:41.153  INFO 12064 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:49:41.260  INFO 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:49:41.265 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:49:41.265 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:49:41.266 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:49:41.266 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:49:41.266 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:49:41.267 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:49:41.267 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:49:41.267 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:49:41.268 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:49:41.268 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:49:41.268 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:49:41.269 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:49:41.269 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:49:41.269 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:49:41.270 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:49:41.270 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:49:41.271 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:49:41.271 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:49:41.271 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:49:41.272 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:49:41.272 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:49:41.272 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:49:41.273 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:49:41.273 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:49:41.277 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:49:41.278 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:49:41.278 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:49:41.278 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:49:41.279 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:49:41.279 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:49:41.280 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:49:41.280 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:49:41.280 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:49:41.280 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:49:41.281 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:49:41.281 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:49:41.282 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:49:41.282 ERROR 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:49:41.421  INFO 12064 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:49:41.534  INFO 12064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:49:42.121  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c069df: startup date [Mon Jun 25 14:49:38 AMT 2018]; root of context hierarchy
+2018-06-25 14:49:42.185  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:49:42.186  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:49:42.188  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:49:42.188  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:49:42.189  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:49:42.190  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:49:42.191  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:49:42.191  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:49:42.193  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:49:42.193  INFO 12064 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:49:42.220  INFO 12064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:49:42.220  INFO 12064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:49:42.235  INFO 12064 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:49:42.257  INFO 12064 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:49:42.638  INFO 12064 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:49:42.676  INFO 12064 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:49:42.870  INFO 12064 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 5.257 seconds (JVM running for 6.348)
+2018-06-25 14:49:47.087  INFO 12064 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:49:47.087  INFO 12064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:49:47.115  INFO 12064 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-06-25 14:49:47.241  INFO 12064 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 14:52:57.106  INFO 12064 --- [Thread-14] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16c069df: startup date [Mon Jun 25 14:49:38 AMT 2018]; root of context hierarchy
+2018-06-25 14:52:57.110  INFO 12064 --- [Thread-14] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:52:57.118  INFO 12064 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:52:57.118  INFO 12064 --- [Thread-14] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:52:57.171  INFO 12064 --- [Thread-14] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:52:59.936  INFO 12411 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 12411 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:52:59.939  INFO 12411 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:53:00.020  INFO 12411 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 14:53:00 AMT 2018]; root of context hierarchy
+2018-06-25 14:53:01.158  INFO 12411 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa935fce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:53:01.409  INFO 12411 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:53:01.416  INFO 12411 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:53:01.417  INFO 12411 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:53:01.481  INFO 12411 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:53:01.481  INFO 12411 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1464 ms
+2018-06-25 14:53:01.573  INFO 12411 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:53:01.575  INFO 12411 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:53:01.575  INFO 12411 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:53:01.576  INFO 12411 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:53:01.576  INFO 12411 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:53:01.881  INFO 12411 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:53:01.889  INFO 12411 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:53:01.928  INFO 12411 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:53:01.929  INFO 12411 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:53:01.930  INFO 12411 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:53:01.951  INFO 12411 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:53:02.009  INFO 12411 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:53:02.094  INFO 12411 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:53:02.096  INFO 12411 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b3a7ef5
+2018-06-25 14:53:02.273  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.274  WARN 12411 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:53:02.310  WARN 12411 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:53:02.311  WARN 12411 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:53:02.569  INFO 12411 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:53:02.663  INFO 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:53:02.667 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:53:02.668 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:53:02.668 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:53:02.668 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:53:02.669 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:53:02.669 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:53:02.670 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:53:02.670 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:53:02.670 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:53:02.670 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:53:02.671 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:53:02.672 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:53:02.672 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:53:02.672 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:53:02.672 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:53:02.673 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:53:02.673 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:53:02.674 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:53:02.674 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:53:02.678 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:53:02.679 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:53:02.679 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:53:02.679 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:53:02.680 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:53:02.680 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:53:02.680 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:53:02.680 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:53:02.681 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:53:02.681 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:53:02.681 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:53:02.681 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:53:02.682 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:53:02.682 ERROR 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:53:02.772  INFO 12411 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:53:02.869  INFO 12411 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:53:03.324  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 14:53:00 AMT 2018]; root of context hierarchy
+2018-06-25 14:53:03.368  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:53:03.369  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:53:03.370  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:53:03.371  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:53:03.371  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:53:03.372  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:53:03.372  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:53:03.373  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:53:03.374  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:53:03.375  INFO 12411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:53:03.395  INFO 12411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:53:03.396  INFO 12411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:53:03.407  INFO 12411 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:53:03.421  INFO 12411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:53:03.642  INFO 12411 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:53:03.688  INFO 12411 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:53:03.856  INFO 12411 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 4.171 seconds (JVM running for 4.863)
+2018-06-25 14:53:08.580  INFO 12411 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:53:08.580  INFO 12411 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:53:08.595  INFO 12411 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2018-06-25 14:53:08.677  INFO 12411 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 14:58:13.389  INFO 12411 --- [Thread-12] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 14:53:00 AMT 2018]; root of context hierarchy
+2018-06-25 14:58:13.394  INFO 12411 --- [Thread-12] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-25 14:58:13.398  INFO 12411 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:58:13.399  INFO 12411 --- [Thread-12] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:58:13.458  INFO 12411 --- [Thread-12] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:58:15.645  INFO 12802 --- [main] b.c.analise.compras.ComprasApplication   : Starting ComprasApplication on arch-linux with PID 12802 (/home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back/target/classes started by rafael in /home/rafael/Documentos/Materias/TES/Trabalho-III/compras-back)
+2018-06-25 14:58:15.647  INFO 12802 --- [main] b.c.analise.compras.ComprasApplication   : No active profile set, falling back to default profiles: default
+2018-06-25 14:58:15.794  INFO 12802 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 14:58:15 AMT 2018]; root of context hierarchy
+2018-06-25 14:58:17.148  INFO 12802 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9622ef3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-25 14:58:17.491  INFO 12802 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-06-25 14:58:17.498  INFO 12802 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-25 14:58:17.499  INFO 12802 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-06-25 14:58:17.548  INFO 12802 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-25 14:58:17.548  INFO 12802 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1766 ms
+2018-06-25 14:58:17.626  INFO 12802 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-25 14:58:17.628  INFO 12802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-25 14:58:17.629  INFO 12802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-25 14:58:17.629  INFO 12802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-25 14:58:17.629  INFO 12802 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-25 14:58:17.954  INFO 12802 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:58:17.963  INFO 12802 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-25 14:58:18.006  INFO 12802 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-06-25 14:58:18.007  INFO 12802 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-25 14:58:18.008  INFO 12802 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-06-25 14:58:18.032  INFO 12802 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-25 14:58:18.092  INFO 12802 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-25 14:58:18.184  INFO 12802 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-25 14:58:18.186  INFO 12802 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@767191b1
+2018-06-25 14:58:18.333  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.334  WARN 12802 --- [main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2018-06-25 14:58:18.357  WARN 12802 --- [main] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:58:18.357  WARN 12802 --- [main] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): br.com.analise.compras.Entity.ItemPedidoPK
+2018-06-25 14:58:18.648  INFO 12802 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: br.com.analise.compras.Entity.PagamentoComCartao (class must be instantiated by Interceptor)
+2018-06-25 14:58:18.792  INFO 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2018-06-25 14:58:18.796 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKldn4j09qrpxcrehb2ok39yany
+2018-06-25 14:58:18.796 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:58:18.797 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table item_pedido drop constraint FKob6r5v77a6p9x7ok4wwg1266i
+2018-06-25 14:58:18.797 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "item_pedido" does not exist
+2018-06-25 14:58:18.798 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_cidade drop constraint FKtn1fjhhp1xj3jot69ysi0a9l6
+2018-06-25 14:58:18.798 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_cidade" does not exist
+2018-06-25 14:58:18.798 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKm4gat5xx2t18u982grycy19b2
+2018-06-25 14:58:18.798 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:58:18.799 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_endereco drop constraint FKil0hk7d7bj46lrqetfkc21x0k
+2018-06-25 14:58:18.799 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_endereco" does not exist
+2018-06-25 14:58:18.799 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento drop constraint FK6gwmcx0qbb0hxfeycktoevmkm
+2018-06-25 14:58:18.800 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento" does not exist
+2018-06-25 14:58:18.800 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_boleto drop constraint FKo71rtwu0nvmjtbkqbca5o1bb7
+2018-06-25 14:58:18.800 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_boleto" does not exist
+2018-06-25 14:58:18.800 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pagamento_com_cartao drop constraint FK43tu1iqp5vpwu0j51w4xxjnyt
+2018-06-25 14:58:18.801 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pagamento_com_cartao" does not exist
+2018-06-25 14:58:18.801 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_pedido drop constraint FK7vmq93g14x7haue9unph6n6mi
+2018-06-25 14:58:18.801 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_pedido" does not exist
+2018-06-25 14:58:18.802 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKfwul5jkyhihif1kascx7xckfs
+2018-06-25 14:58:18.802 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:58:18.802 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_produto_categoria drop constraint FKby835nss26wbo59qsi845f4x8
+2018-06-25 14:58:18.803 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_produto_categoria" does not exist
+2018-06-25 14:58:18.803 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table tb_telefone drop constraint FKqx4gx8hfflsksmhraih0n42i3
+2018-06-25 14:58:18.804 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: relation "tb_telefone" does not exist
+2018-06-25 14:58:18.808 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_categoria
+2018-06-25 14:58:18.808 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_categoria" does not exist
+2018-06-25 14:58:18.808 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cidade
+2018-06-25 14:58:18.808 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cidade" does not exist
+2018-06-25 14:58:18.809 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_cliente
+2018-06-25 14:58:18.809 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_cliente" does not exist
+2018-06-25 14:58:18.810 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_endereco
+2018-06-25 14:58:18.810 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_endereco" does not exist
+2018-06-25 14:58:18.810 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_estado
+2018-06-25 14:58:18.810 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_estado" does not exist
+2018-06-25 14:58:18.811 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_pedido
+2018-06-25 14:58:18.811 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_pedido" does not exist
+2018-06-25 14:58:18.811 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence seq_produto
+2018-06-25 14:58:18.812 ERROR 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : ERROR: sequence "seq_produto" does not exist
+2018-06-25 14:58:18.958  INFO 12802 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2018-06-25 14:58:19.059  INFO 12802 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-25 14:58:19.998  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e50a6f6: startup date [Mon Jun 25 14:58:15 AMT 2018]; root of context hierarchy
+2018-06-25 14:58:20.061  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.buscarCategoria(java.lang.Long)
+2018-06-25 14:58:20.063  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.deletar(java.lang.Long)
+2018-06-25 14:58:20.064  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[POST],consumes=[application/json]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.salvar(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:58:20.065  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.get()
+2018-06-25 14:58:20.065  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/categoria/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.CategoriaResource.update(br.com.analise.compras.Entity.Categoria)
+2018-06-25 14:58:20.066  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.deletar(java.lang.Long)
+2018-06-25 14:58:20.067  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.savar(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:58:20.067  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/produto],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> br.com.analise.compras.resource.ProdutoResource.update(java.lang.Long,br.com.analise.compras.Entity.Produto)
+2018-06-25 14:58:20.069  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-25 14:58:20.069  INFO 12802 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-25 14:58:20.088  INFO 12802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:58:20.088  INFO 12802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:58:20.099  INFO 12802 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in resourceExceptionHandler
+2018-06-25 14:58:20.114  INFO 12802 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-25 14:58:20.566  INFO 12802 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-25 14:58:20.681  INFO 12802 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-06-25 14:58:20.880  INFO 12802 --- [main] b.c.analise.compras.ComprasApplication   : Started ComprasApplication in 5.708 seconds (JVM running for 6.498)
+2018-06-25 14:58:26.962  INFO 12802 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-25 14:58:26.962  INFO 12802 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-25 14:58:26.979  INFO 12802 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-06-25 14:58:27.085  INFO 12802 --- [http-nio-8081-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-25 15:50:20.293  WARN 12802 --- [http-nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Can not deserialize value of type java.lang.Double from String "12,23": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize value of type java.lang.Double from String "12,23": not a valid Double value
+ at [Source: java.io.PushbackInputStream@214ccf00; line: 1, column: 25] (through reference chain: br.com.analise.compras.Entity.Produto["preco"])

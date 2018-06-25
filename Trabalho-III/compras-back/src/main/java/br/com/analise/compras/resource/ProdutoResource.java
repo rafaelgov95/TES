@@ -28,6 +28,10 @@ public class ProdutoResource {
     @Autowired
     private CategoriaService categoriaService;
 
+//    @RequestMapping(method = RequestMethod.PUT)
+//    public ResponseEntity<?> update(@RequestBody Produto produto) {
+//        return ResponseEntity.ok().body( produtoService.salvar(produto));
+//    }
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<?> update(@RequestParam Long id , @RequestBody Produto produto) {
@@ -35,11 +39,6 @@ public class ProdutoResource {
         produto.getCategorias().add(cat);
         return ResponseEntity.ok().body( produtoService.salvar(produto));
     }
-//    @RequestMapping(method = RequestMethod.PUT)
-//    @ResponseStatus(HttpStatus.CREATED)
-//    public ResponseEntity<?> update(@RequestBody Produto produto) {
-//        return ResponseEntity.ok().body( produtoService.salvar(produto));
-//    }
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
