@@ -1,10 +1,7 @@
 package br.com.analise.compras.resource;
 
 import br.com.analise.compras.Entity.Produto;
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import br.com.analise.compras.Entity.Categoria;
 import br.com.analise.compras.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/categoria")
 @CrossOrigin("http://localhost:8080")
 public class CategoriaResource {
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private CategoriaService categoriaService;
 

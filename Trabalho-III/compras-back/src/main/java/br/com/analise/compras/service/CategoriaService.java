@@ -1,7 +1,6 @@
 package br.com.analise.compras.service;
 
 import br.com.analise.compras.Entity.Categoria;
-import br.com.analise.compras.Entity.Produto;
 import br.com.analise.compras.exception.ObjectNotFountException;
 import br.com.analise.compras.repository.CategoriaRepository;
 import br.com.analise.compras.repository.ProdutoRepository;
@@ -20,7 +19,6 @@ public class CategoriaService {
     private ProdutoRepository produtoRepository;
     @Autowired
     private CategoriaRepository categoriaRepository;
-    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public Categoria salvar(Categoria cat1) {
         return categoriaRepository.save(cat1);
